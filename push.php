@@ -3,5 +3,9 @@
 if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push')
 {
   shell_exec( 'cd /var/www/vhosts/lemberg.co.uk/howto.lemberg.co.uk && jekyll build && git reset --hard HEAD && git pull origin master' );
+  echo json_encode(array('success' => true));
+  die;
 }
 
+echo json_encode(array('success' => false));
+die;
