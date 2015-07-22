@@ -5,3 +5,4 @@ _site
 tmp
 .sass-cache
 /mkmf.log
+/npm-debug.log
