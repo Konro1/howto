@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^howto.lemberg.co.uk [NC]
+RewriteRule !(\.php)$ http://howto.lemberg.co.uk:4000/$1 [R=301,L]
